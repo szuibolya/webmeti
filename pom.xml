@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>webmeti.hu</groupId>
+  <artifactId>webmeti</artifactId>
+  <version>0.0.1</version>
+  <packaging>war</packaging>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  
+
+<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api -->
+<dependency>
+    <groupId>javax.servlet.jsp</groupId>
+    <artifactId>jsp-api</artifactId>
+    <version>2.2</version>
+    <scope>provided</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.0.1</version>
+    <scope>provided</scope>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>9.2-1003-jdbc4</version>
+</dependency>
+
+<dependency>
+    <groupId>methis</groupId>
+    <artifactId>methisservlet</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/methisservlet.jar</systemPath>
+</dependency>
+
+    
+  </dependencies>
+  
+  <build>
+    <finalName>webmeti</finalName>
+  </build>
+  <url>http://maven.apache.org</url>
+  <name>webmeti Maven Webapp</name>
+</project>

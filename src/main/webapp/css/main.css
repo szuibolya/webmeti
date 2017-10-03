@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+#mainroot {	
+width: 100%;
+height: 100%;
+
+}
+
+div { 
+  border: 1px solid #909090
+}
+
+.borderLayout {
+  display: table;  
+  width: 100%;
+  height: 100%;
+}
+
+.borderLayout .top {
+	display: /*table-row;*/ none;
+	height:20%;
+}
+
+.borderLayout .left {
+    display: /*table-cell*/none;
+    vertical-align: middle;
+    width: 15%;
+  }
+
+.borderLayout .center {
+    display: table-cell;
+    vertical-align:top/* middle*/; 
+    height: 800px;
+}
+
+.borderLayout .right {
+    display: /*table-cell*/none;
+    vertical-align: middle;
+    width: 10%;
+  }
+  
+.borderLayout .bottom {
+	display: /*table-row;*/ none;	
+        height:10%
+}
