@@ -11,13 +11,13 @@ x.nextElementSibling.style.display = "none";
 x.nextElementSibling.nextElementSibling.style.display = "none";
 if(e.clientX<20)
  {
-  x.style.background = "red";  
+  /*x.style.background = "red";*/  
   x.previousElementSibling.style.display = "table-cell";
  }
 if(e.clientX>x.offsetWidth-20)
  {
-  x.style.background = "blue";
-  x.nextElementSibling.style.display = "table-cell";
+  /*x.style.background = "blue";
+  x.nextElementSibling.style.display = "table-cell";*/
  }
 if(e.clientY<20)
  {

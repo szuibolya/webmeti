@@ -17,6 +17,7 @@ function doLogin(){
 	     	      document.getElementById("mainroot").innerHTML =  this.responseText;
 	     	      addResources("js/main.js","css/main.css");
 	     	      addResources("js/menu_click.js");
+	     	      top.document.title = "Webmeti";
 	     	    }
 	     	  }
 	     	  xhttp.open("GET", "menu.jsp?sid="+sessionStorage.sid, true);
@@ -39,6 +40,7 @@ function loginform(id){
      var scriptNode = document.createElement('script');    
      scriptNode.setAttribute("src", "js/sha1.js");
      _in.appendChild(scriptNode);
+     top.document.title = "Login";
    }
  };
  sessionStorage.lang = id;
