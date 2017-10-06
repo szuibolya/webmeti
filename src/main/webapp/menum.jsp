@@ -79,17 +79,17 @@ ORDER BY htmlid
       </c:if> 
       <!-- div lezaro -->
        </table>
-       </div>
+      
       </details>
     
     </c:if>
-         <details class="panel panel-default">
-          <summary class="panel-heading">
+         <details class="meti-menu-level-0">
+          <summary class="meti-menu-level-0-title">
           <span class="glyphicon glyphicon-folder-close"></span>
                   <c:out value="${row.txt}"/>
         </summary>   
-        <div class="panel-body">
-        <table class="table">
+        
+        <table class="meti-menu-table">
         <c:set var="indiv" value="1" />      
   </c:if>
   <c:if test="${row.menulevel == 1 && row.menutype == 0}" >  
@@ -104,7 +104,7 @@ ORDER BY htmlid
           <tr>
             <td> 
             
-             <a  href="#"  id="<c:out value="${row.idname}"/>" onclick="menuhandler(this,' <c:out value="${param.lang}" />','<c:out value="${nUserId}" />','<c:out value="${param.sid}" />')"><c:out value="${row.txt}"/></a>
+             <a  href="#" class="meti-menu-submenu" id="<c:out value="${row.idname}"/>" onclick="menuhandler(this,' <c:out value="${param.lang}" />','<c:out value="${nUserId}" />','<c:out value="${param.sid}" />')"><c:out value="${row.txt}"/></a>
            </td>
           </tr> 
     </c:if>
@@ -113,13 +113,13 @@ ORDER BY htmlid
       <!-- 1. szint ALMENU GYUJTO-------------------------------   -->
           <tr>
           <td> 
-          <details>
-             <summary><span class="glyphicon glyphicon-list-alt"></span>  <c:out value="${row.txt}"/></summary>
+             <details class="meti-menu-submenu-list-table">
+             <summary class="meti-menu-submenu-list"><span class="glyphicon glyphicon-list-alt"></span>  <c:out value="${row.txt}"/></summary>
           <c:set var="indetail" value="1" /> 
   </c:if>
    <c:if test="${row.menulevel == 2}" >  
       <!-- 2. szint ALMENU LEVELELEM-------------------------------   -->
-          <p class="table" ><a id="<c:out value="${row.idname}"/>" href="#" onclick="menuhandler(this,' <c:out value="${param.lang}" />','<c:out value="${nUserId}" />','<c:out value="${param.sid}" />')"> <c:out value="${row.txt}"/> </a></p>
+          <p ><a id="<c:out value="${row.idname}"/>" href="#" onclick="menuhandler(this,' <c:out value="${param.lang}" />','<c:out value="${nUserId}" />','<c:out value="${param.sid}" />')"> <c:out value="${row.txt}"/> </a></p>
         
   </c:if>
   
@@ -128,7 +128,7 @@ ORDER BY htmlid
 <c:if test = "${indiv == 1}">
     <!-- VEGE div lezaro -->
     </table>
-    </div>
+    
     </details>
 </c:if>
 
