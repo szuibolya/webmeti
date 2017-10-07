@@ -3,6 +3,7 @@ package services;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
@@ -36,6 +37,7 @@ public class HandlerServlet  extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		 Hashtable pht = new Hashtable();
          try {
+        	 //Collections.list(req.getHeaderNames()).forEach(enu -> {log("header names="+enu+ "="+req.getHeader(enu));});
         	 req.setCharacterEncoding("UTF-8");
              Enumeration e = req.getParameterNames();
              while (e.hasMoreElements()) {
@@ -43,6 +45,7 @@ public class HandlerServlet  extends HttpServlet{
                  String val = req.getParameter(key);
                  if (val==null) log("---------------------------------------------------------- HandlerServlet------------- key="+key+" val="+val);
                  pht.put(key,val);
+                 //log("HandlerServlet "+key+"="+val);
              }
              if(pht.containsKey("function")) {
             	 try {

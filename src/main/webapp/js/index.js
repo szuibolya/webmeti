@@ -25,8 +25,10 @@ function doLogin(){
 	       }
 	    }
 	  };
-	  xhttp.open("GET", "HS?function=login&sid="+sessionStorage.sid+"&u="+u+"&p="+SHA1(s)+"&langicon="+sessionStorage.lang, true);
-	  xhttp.send();
+	  xhttp.open("POST", "HS", true);
+	  xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	  
+	  xhttp.send("function=login&sid="+sessionStorage.sid+"&u="+u+"&p="+SHA1(s)+"&langicon="+sessionStorage.lang);
 	  
  	    
 }
