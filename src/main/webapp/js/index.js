@@ -16,7 +16,7 @@ function doLogin(){
 	     	    if (this.readyState == 4 && this.status == 200) {
 	     	      document.getElementById("mainroot").innerHTML =  this.responseText;
 	     	      addResources("js/main.js","css/main.css");
-	     	      addResources("js/menu_click.js","css/menu.css");
+	     	      addResources("js/menu_click.js");
 	     	      top.document.title = "Webmeti";
 	     	    }
 	     	  }
