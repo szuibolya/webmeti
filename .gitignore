@@ -3,3 +3,5 @@
 .classpath
 .project
 /bin/
+.tern-project
+/src/main/webapp/WEB-INF/lib/methisservlet.jar
