@@ -21,12 +21,12 @@ if(e.clientX>x.offsetWidth-20)
  }
 if(e.clientY<20)
  {
-  x.style.background = "yellow";
+  /*x.style.background = "yellow";*/
   x.previousElementSibling.previousElementSibling.style.display = "table-row";
  }
 if(e.clientY>x.offsetHeight-20)
  {
-  x.style.background = "green";
+  /*x.style.background = "green";*/
   x.nextElementSibling.nextElementSibling.style.display = "table-row";
  }
 }
