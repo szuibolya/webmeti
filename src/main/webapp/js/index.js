@@ -17,6 +17,7 @@ function doLogin(){
 	     	      document.getElementById("mainroot").innerHTML =  this.responseText;
 	     	      addResources("js/main.js","css/main.css");
 	     	      addResources("js/menu_click.js","css/menu.css");
+	     	      addResources("js/webmeti.js","css/webmeti.css");
 	     	      top.document.title = "Webmeti";
 	     	    }
 	     	  }

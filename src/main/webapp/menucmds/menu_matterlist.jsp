@@ -14,6 +14,6 @@ MetiResponse mr = new MetiResponse(bl.stk_partner_list_live((Connection)request.
 DefaultTableModel dtm = (DefaultTableModel)mr.getHt().get("dtm");
 String lista = Tools.plainTextfromDtm(dtm," ",ht,false);*/
 String lista = new Tools().getTableDatas(request,application,"stk_ml"); 
-%>
+%> 
 <h1>Anyaglista</h1>
 <%= lista %>

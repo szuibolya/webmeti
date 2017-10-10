@@ -23,7 +23,7 @@ function menuhandler(event,lang,userid,sid) {
 	    	document.getElementById('bl_center').innerHTML = this.responseText;	    	  	  
 	    }
 	  };
-	  xhttp.open("GET", "menuaction.jsp?sid="+sessionStorage.sid+"&mid="+event.id, true);
+	  xhttp.open("GET", "menuaction.jsp?sid="+sessionStorage.sid+"&mid="+event.id+"&lang="+sessionStorage.lang, true);
 	  xhttp.send();
 }
 
