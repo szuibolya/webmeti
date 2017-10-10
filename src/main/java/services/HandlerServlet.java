@@ -36,6 +36,7 @@ public class HandlerServlet  extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		 Hashtable pht = new Hashtable();
          try {
+        	 
         	 req.setCharacterEncoding("UTF-8");
              Enumeration e = req.getParameterNames();
              while (e.hasMoreElements()) {

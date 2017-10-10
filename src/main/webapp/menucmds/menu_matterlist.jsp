@@ -13,7 +13,7 @@ ht.put("lang",request.getAttribute("lang"));
 MetiResponse mr = new MetiResponse(bl.stk_partner_list_live((Connection)request.getAttribute("con"), ht));
 DefaultTableModel dtm = (DefaultTableModel)mr.getHt().get("dtm");
 String lista = Tools.plainTextfromDtm(dtm," ",ht,false);*/
-String lista = new Tools().getTableDatas(request,application,"stk_pllive"); 
+String lista = new Tools().getTableDatas(request,application,"stk_ml"); 
 %>
-<h1>Partnerlista</h1>
+<h1>Anyaglista</h1>
 <%= lista %>

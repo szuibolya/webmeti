@@ -16,7 +16,7 @@ function doLogin(){
 	     	    if (this.readyState == 4 && this.status == 200) {
 	     	      document.getElementById("mainroot").innerHTML =  this.responseText;
 	     	      addResources("js/main.js","css/main.css");
-	     	      addResources("js/menu_click.js");
+	     	      addResources("js/menu_click.js","css/menu.css");
 	     	      top.document.title = "Webmeti";
 	     	    }
 	     	  }
@@ -25,8 +25,9 @@ function doLogin(){
 	       }
 	    }
 	  };
-	  xhttp.open("GET", "HS?function=login&sid="+sessionStorage.sid+"&u="+u+"&p="+SHA1(s)+"&langicon="+sessionStorage.lang, true);
-	  xhttp.send();
+	  xhttp.open("POST", "HS", true);
+	  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	  xhttp.send("function=login&sid="+sessionStorage.sid+"&u="+u+"&p="+SHA1(s)+"&langicon="+sessionStorage.lang);
 	  
  	    
 }

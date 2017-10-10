@@ -19,8 +19,11 @@ function menuhandler(event,lang,userid,sid) {
 	    	document.getElementById('bl_center').innerHTML = this.responseText;
 	    	addResources("js/mytable.js");		    	   
 	    }
+	    if (this.readyState == 4 && this.status != 200) {
+	    	document.getElementById('bl_center').innerHTML = this.responseText;	    	  	  
+	    }
 	  };
-	  xhttp.open("GET", "menuaction.jsp?sid="+sessionStorage.sid+"&mid="+event.id+"&function=stk_pllive", true);
+	  xhttp.open("GET", "menuaction.jsp?sid="+sessionStorage.sid+"&mid="+event.id, true);
 	  xhttp.send();
 }
 
