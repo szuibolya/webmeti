@@ -62,15 +62,14 @@ String lista = mytools.getTableDatas(request,application,ht);
   </select>
 </div>
 <div class="meti-date-interval">
-  
-  <input type="checkbox" name="chk0" value="'0'" id="chk0" class="meti-date-chk" checked> <%= langht.get("msg_ordstat0") %> <br>
-  <input type="checkbox" name="chk1" value="'1'" id="chk1" class="meti-date-chk" checked> <%= langht.get("msg_ordstat1") %> <br>
-  <input type="checkbox" name="chk2" value="'2'" id="chk2" class="meti-date-chk" > <%= langht.get("msg_ordstat2") %> <br>
-  <input type="checkbox" name="chk3" value="'3'" id="chk3" class="meti-date-chk" > <%= langht.get("msg_ordstat3") %> <br>
-  <input type="checkbox" name="chk4" value="'4'" id="chk4" class="meti-date-chk" > <%= langht.get("msg_ordstat4") %> <br>
-  <input type="checkbox" name="chk5" value="'5'" id="chk5" class="meti-date-chk" > <%= langht.get("msg_ordstat5") %> <br>
-  <input type="checkbox" name="chk6" value="'6'" id="chk6" class="meti-date-chk" > <%= langht.get("msg_ordstat6") %> <br>
-  <input type="checkbox" name="chk7" value="'7'" id="chk7" class="meti-date-chk" > <%= langht.get("msg_ordstat7") %> <br>
+  <div class="meti-date-checkcontainer" ><input type="checkbox" name="chk0" value="'0'" id="chk0" class="meti-date-chk" checked> <span class="glyphicon glyphicon-edit" style="color: #19B5FE" /><span style="color:black"> <%= langht.get("msg_ordstat0") %></div>
+  <div class="meti-date-checkcontainer" ><input type="checkbox" name="chk1" value="'1'" id="chk1" class="meti-date-chk" checked> <span class="glyphicon glyphicon-ok" style="color: #3498DB" /> <span style="color:black"><%= langht.get("msg_ordstat1") %> </div>
+  <div class="meti-date-checkcontainer" ><input type="checkbox" name="chk2" value="'2'" id="chk2" class="meti-date-chk" >        <span class="glyphicon glyphicon-share" style="color: #1F3A93" /><span style="color:black"><%= langht.get("msg_ordstat2") %> </div>
+  <div class="meti-date-checkcontainer" ><input type="checkbox" name="chk3" value="'3'" id="chk3" class="meti-date-chk" >        <span class="glyphicon glyphicon-remove-sign" style="color: #EF4836" /><span style="color:black"> <%= langht.get("msg_ordstat3") %> </div>
+  <div class="meti-date-checkcontainer" ><input type="checkbox" name="chk4" value="'4'" id="chk4" class="meti-date-chk" >        <span class="glyphicon glyphicon-ban-circle" style="color: #96281B" /><span style="color:black"><%= langht.get("msg_ordstat4") %> </div>
+  <div class="meti-date-checkcontainer" ><input type="checkbox" name="chk5" value="'5'" id="chk5" class="meti-date-chk" >        <span class="glyphicon glyphicon-minus-sign" style="color: #FF0000" /><span style="color:black"><%= langht.get("msg_ordstat5") %> </div>
+  <div class="meti-date-checkcontainer" ><input type="checkbox" name="chk6" value="'6'" id="chk6" class="meti-date-chk" >        <span class="glyphicon glyphicon-ok-sign" style="color: #2ECC71" /><span style="color:black"><%= langht.get("msg_ordstat6") %> </div>
+  <div class="meti-date-checkcontainer" ><input type="checkbox" name="chk7" value="'7'" id="chk7" class="meti-date-chk" >        <span class="glyphicon glyphicon-ok-sign" style="color: #2ECC71" /><span style="color:black"><%= langht.get("msg_ordstat7") %> </div>
   <button type="submit" class="btn btn-primary meti-date-submit" onclick="orderinfo_supplier_loadtable(document.getElementById('date-begin').value,document.getElementById('date-end').value),document.getElementById('datetype').value,document.getElementById('chk0').checked,document.getElementById('chk1').checked,document.getElementById('chk2').checked,document.getElementById('chk3').checked,document.getElementById('chk4').checked,document.getElementById('chk5').checked,document.getElementById('chk6').checked,document.getElementById('chk7').checked)" >OK</button>
   
 </div>

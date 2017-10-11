@@ -49,3 +49,13 @@
    -moz-border-radius: 5px;
    border-radius: 5px;
 }
+
+.meti-date-checkcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    border: 1px solid white;
+    margin: 0px 5px 0px 5px;
+}
