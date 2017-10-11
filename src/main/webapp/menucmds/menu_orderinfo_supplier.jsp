@@ -71,7 +71,7 @@ String lista = mytools.getTableDatas(request,application,ht);
   <input type="checkbox" name="chk5" value="'5'" id="chk5" class="meti-date-chk" > <%= langht.get("msg_ordstat5") %> <br>
   <input type="checkbox" name="chk6" value="'6'" id="chk6" class="meti-date-chk" > <%= langht.get("msg_ordstat6") %> <br>
   <input type="checkbox" name="chk7" value="'7'" id="chk7" class="meti-date-chk" > <%= langht.get("msg_ordstat7") %> <br>
-  <button type="submit" class="btn btn-primary meti-date-submit" onclick="orderinfo_supplier_loadtable(document.getElementById('date-begin').value,document.getElementById('date-end').value),document.getElementById('datetype').value,document.getElementById('chk0').checked,document.getElementById('chk1').checked,document.getElementById('chk2').checked,document.getElementById('chk3').checked,document.getElementById('chk4').checked,document.getElementById('chk5').checked,document.getElementById('chk6').checked,document.getElementById('chk').checked)" >OK</button>
+  <button type="submit" class="btn btn-primary meti-date-submit" onclick="orderinfo_supplier_loadtable(document.getElementById('date-begin').value,document.getElementById('date-end').value),document.getElementById('datetype').value,document.getElementById('chk0').checked,document.getElementById('chk1').checked,document.getElementById('chk2').checked,document.getElementById('chk3').checked,document.getElementById('chk4').checked,document.getElementById('chk5').checked,document.getElementById('chk6').checked,document.getElementById('chk7').checked)" >OK</button>
   
 </div>
 <h1><%= langht.get("menu_orderinfo_supplier") %></h1>
