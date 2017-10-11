@@ -9,6 +9,7 @@
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:14px;
   padding: 15px 0px 15px 0px;
+  border: none;
 }
 .meti-date-label {
     
@@ -43,6 +44,10 @@
     padding: 0px 5px 0px 0px;
     margin: 0px 5px 0px 0px;
 }
+.meti-date-chk+span {
+    text-align: left;
+    min-width: 25px;
+}
 
 .meti-semi-square {
    -webkit-border-radius: 5px;
@@ -58,4 +63,16 @@
     align-items: baseline;
     border: 1px solid white;
     margin: 0px 5px 0px 5px;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.meti-date-checkcontainer>label {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:14px;
+    font-weight: normal;
+    color: black;
+    
 }
