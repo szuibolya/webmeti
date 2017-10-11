@@ -41,7 +41,7 @@ String lista = mytools.getTableDatas(request,application,ht);
   <input class="meti-date-input" type="date" id="date-begin" value="<%= begindateISO %>">
   <label class="meti-date-line" > - </label>
   <input class="meti-date-input" type="date" id="date-end" value="<%= enddateISO %>">
-  <button type="submit" class="btn btn-primary meti-date-sumbmit" onclick="storestockdate_list_loadtable(document.getElementById('date-begin').value,document.getElementById('date-end').value)" >OK</button>
+  <button type="submit" class="btn btn-primary meti-date-submit" onclick="storestockdate_list_loadtable(document.getElementById('date-begin').value,document.getElementById('date-end').value)" >OK</button>
 </div>
 <h1><%= langht.get("menu_storestockdate_list") %></h1>
 <div id="storestockdate-list-table">

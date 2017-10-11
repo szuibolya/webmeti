@@ -8,20 +8,44 @@
   align-items: baseline;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:14px;
-  padding: 15 px;
+  padding: 15px 0px 15px 0px;
 }
 .meti-date-label {
-    height : 20 px;
+    
     min-width: 100px;
-    padding: 15 px;
+    padding: 5px 5px 5px 5px;
 }
 .meti-date-input {
-    height : 20 px;
+    
     min-width: 150px;
-    padding: 15 px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 10px 5px 10px;
 }
-.meti-date-sumbmit {
-    height : 20 px;
+.meti-date-submit {
+    
     min-width: 100px;
-    padding: 15 px;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 5px 0px 15px;
+}
+.meti-date-combo {
+    background-color: white;
+    background: transparent;
+    height: 35px;
+    overflow: hidden;   
+    min-width: 150px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 10px 5px 10px;
+}
+
+.meti-date-chk {
+    text-align: left;
+    min-width: 25px;
+    padding: 0px 5px 0px 0px;
+    margin: 0px 5px 0px 0px;
+}
+
+.meti-semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
 }
