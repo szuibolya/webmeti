@@ -28,7 +28,7 @@ function orderinfo_supplier_loadtable(bdate,edate,dtype_id,chk0,chk1,chk2,chk3,c
 	if (chk1) statuslista += "'5',";
 	if (chk1) statuslista += "'6',";
 	if (chk1) statuslista += "'7',";
-	if (statuslista.length) > 0) statuslista = statuslista.substr(0,statuslista.length-1);
+	if (statuslista.length > 0) statuslista = statuslista.substr(0,statuslista.length-1);
 	
 	var xhttp = new XMLHttpRequest();
 	  xhttp.onreadystatechange = function() {
