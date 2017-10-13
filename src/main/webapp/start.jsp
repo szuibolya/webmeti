@@ -16,8 +16,10 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="dist/themes/default/style.min.css" />
-<script src="dist/jstree.min.js"></script>
+<!-- <link rel="stylesheet" href="dist/themes/default/style.min.css" /> -->
+<!-- <script src="dist/jstree.min.js"></script> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
 
 <%
 String preflang = request.getHeader("accept-language").split(",")[0];
