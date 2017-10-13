@@ -17,7 +17,15 @@ function menuhandler(event,lang,userid,sid) {
 	  xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
 	    	document.getElementById('bl_center').innerHTML = this.responseText;
-	    	addResources("js/mytable.js");		    	   
+	    	addResources("js/mytable.js");
+	    	var start = this.responseText.indexOf("<script>");
+	    	if(start!=-1) {
+	    		start=start+8;
+	    		var end = this.responseText.indexOf("</script>");
+		    	var script = this.responseText.slice(start,end);
+		    	eval(script);
+	    	}
+	    	
 	    }
 	    if (this.readyState == 4 && this.status != 200) {
 	    	document.getElementById('bl_center').innerHTML = this.responseText;	    	  	  

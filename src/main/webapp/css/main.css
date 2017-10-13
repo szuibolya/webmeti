@@ -24,7 +24,7 @@ div {
 .borderLayout .left {
     display: /*table-cell*/none;
     vertical-align: middle;
-    width: 15%;
+    width: 15%;    
   }
 
 .borderLayout .center {
@@ -42,4 +42,50 @@ div {
 .borderLayout .bottom {
 	display: /*table-row;*/ none;	
         height:10%
+}
+
+.redclass {
+	color:red;
+}
+.orderincolor {
+	color:#F27935;
+}
+.ordercolor {
+	color:#F9BF3B;
+}
+.mod16color {
+	color:#19B5FE;
+}
+.docok16color {
+	color:#3498DB;
+}
+.final24color {
+	color:#1F3A93;
+}
+.drop_newcolor {
+	color:#EF4836;
+}
+.finalnot24color {
+	color:#96281B;
+}
+.drop16color {
+	color:#FF0000;
+}
+.okminicolor {
+	color:#2ECC71;
+}
+.mattercolor {
+	color:#913D88;
+}
+.samplecolor {
+	color:#6C7389;
+}
+.prodreturncolor {
+	color:#1E8BC3;
+}
+.packreturncolor {
+	color:#67809F;
+}
+.auto_bluecolor {
+	color:#4ECDC4;
 }
